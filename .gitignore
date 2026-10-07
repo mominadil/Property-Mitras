@@ -1,5 +1,4 @@
-# Holds the live SSH password and host details — never commit.
-deploy.conf
+
 
 # Anything else carrying credentials
 *.pem
