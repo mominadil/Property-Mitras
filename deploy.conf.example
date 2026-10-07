@@ -1,0 +1,20 @@
+# ── Staging server connection (copy to deploy.conf and fill in) ─────────────
+# deploy.conf is gitignored — it holds secrets/host info, never commit it.
+
+# SSH connection to your staging server
+SSH_HOST=""                             # hostname or IP
+SSH_USER=""                             # ssh login user
+SSH_PORT="22"                           # ssh port
+# SSH_KEY="$HOME/.ssh/id_rsa"           # path (on this machine) to the private key
+SSH_PASS=""
+
+# Where WordPress lives on the staging server (the dir containing wp-config.php)
+REMOTE_PATH=""
+
+# How to invoke WP-CLI on the staging server.
+# Usually just "wp". If wp isn't on PATH, use e.g. "php /home/deploy/wp-cli.phar"
+REMOTE_WP="wp"
+
+# Public URLs (scheme + host, no trailing slash). Used for search-replace so
+# links, Elementor data and options point at the right domain after a sync.
+STAGING_URL=""

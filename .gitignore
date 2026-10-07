@@ -1,0 +1,27 @@
+# Holds the live SSH password and host details — never commit.
+deploy.conf
+
+# Anything else carrying credentials
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# Database dumps and media archives
+*.sql
+*.sql.gz
+*.tar.gz
+backups/
+
+# WordPress — pulled from the server, not tracked here
+wp-config.php
+wp-content/uploads/
+
+# Local noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+node_modules/
+vendor/
